@@ -188,7 +188,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("https://media-hosting.imagekit.io/7254d6afa51f4516/digital-art-dark-cosmic-night-sky.jpg?Expires=1837618905&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=eUumKlUinu1ENmyaFP23BMEOEqroh1zWEYXkSL35N68aFLlIypvMQ~YIAZ-MihQhRiCnj1eMFSccqArR~qFOSOgUWfWheDDJDHMs1jSaOiWcJSuCXKhrkkk1hW6dxSDujfiXrmBcko0NJav5huXv0Gl7ZoXF0d256e5pZQqb2PrrbsQmDXT5m~QJU0qSLuco2Zq4UQ2PE0ngomn67k9gq987MetMietoUItblfYZ-ywky1hi-i~eaDXbFalSkz~hOmpo9CpDfYimFw4WbcYSvvHktf-f37Uy1oOOWuZ55P6q0RMxJp-SKKYKLx7FCOZvzU5-6qIZ4acOJuLMpRyghA__") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -270,8 +270,8 @@ section .title::after{
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
-    color: #fff;
+    background: rgb(173, 3, 37);
+    color: #160303;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
@@ -286,7 +286,7 @@ section .title::after{
 }
 /* services section styling */
 .services, .project{
-    color:#fff;
+    color:#e3dcdc;
     background: #111;
 }
 .services .title::before,
@@ -347,7 +347,7 @@ section .title::after{
 .skills .skills-content .left a{
     display: inline-block;
     background: crimson;
-    color: #fff;
+    color: #e91111;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
@@ -376,10 +376,10 @@ section .title::after{
 .skills .skills-content .right .line{
     height: 5px;
     width: 100%;
-    background: lightgrey;
+    background: rgb(231, 228, 228);
     position: relative;
 }
-.skills .skills-content .right .line::before{
+.skills .skills-content .right .line::before{   
     content: "";
     position: absolute;
     height: 100%;
@@ -396,78 +396,51 @@ section .title::after{
 .skills-content .right .js::before{
     width: 80%;
 }
-.skills-content .right .php::before{
+.skills-content .right .ml::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
+.skills-content .right .python::before{
     width: 70%;
 }
-/* project section styling */
+.projects {
+    padding: 50px 0;
+    background: #000000;
+}
 
-.project .title::after{
-    content: "liveview";
-}
-.project .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
+.projects .title {
     text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-   
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
-.project .carousel .card:hover{
-    background: crimson;
-}
-.project .carousel .card .box{
+
+.projects .carousel {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
-}
-.project .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.project .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.project .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}
-.project .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
 }
 
-/* contact section styling */
+.projects .card {
+    background: rgb(176, 34, 34);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.projects .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.projects .card .text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.projects .card p {
+    color: #f7ecec;
+}
 .contact .title::after{
     content: "get in touch";
 }
